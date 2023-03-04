@@ -17,13 +17,11 @@ body {
     right: 20px;
     width: 64px;
     height: 64px;
-    /*display: grid;
-    place-items: center;*/
     border-radius: 50%;
 }
 
 header {
-    background-color: white;
+    background-color: #ffffff;
     color: black;
     position: fixed;
     top: 0;
@@ -45,12 +43,27 @@ header {
     margin-left: 40px;
 }
 
-.navigation a:hover {
-    color: red;
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
 }
 
 .section_1 {
-    background-color: #00adad;
+    background: linear-gradient(-30deg, #215391, #00adad);
     height: 800px;
     margin-top: 0px;
 }
@@ -69,22 +82,17 @@ h1 {
     color: #ffffff;
 }
 
-.section_2 {
-
-}
+.section_2 {}
 
 .destination {
-    margin-top: 20px;
-    margin-left: 20px;
-}
-
-.section_3 {
-    background-color: #00adad;
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: underline;
 }
 
 .squreline {
     width: 100%;
-    padding: 100px 200px;
+    padding: 50px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,6 +113,7 @@ h1 {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    transition: transform 0.5s;
 }
 
 .squreline a .squre {
@@ -121,7 +130,7 @@ h1 {
     height: 100%;
     top: -260px;
     left: 0;
-    background: linear-gradient(-45deg, #215391, #00adad);
+    background: linear-gradient(-60deg, #215391, #00adad);
     position: absolute;
     transition: 0.5s;
 }
@@ -134,38 +143,19 @@ h1 {
     color: white;
 }
 
-/*.squre {
-    width: 250px;
-    height: 250px;
-    background-color: white;
-    border-radius: 20px;
-    color: black;
-    font-size: 1.8em;
+.squreline a:hover {
+    transform: translateY(-10px);
+}
+
+.section_3 {
+    background: linear-gradient(-60deg, #215391, #00adad);
+}
+
+.sometext {
+    padding-top: 50px;
+    color: white;
     text-align: center;
-}
-
-#squre1 {
-    background-color: white;
-    border: 2px solid black;
-}
-
-#squre2 {
-    background-color: white;
-    border: 2px solid black;
-}
-
-#squre3 {
-    background-color: white;
-    border: 2px solid black;
-}*/
-
-.squreline a.test:hover {
-    color: green;
-}
-
-.gallery {
-    padding-top: 20px;
-    margin-left: 20px;
+    text-decoration: underline;
 }
 
 hr {
@@ -176,10 +166,76 @@ hr {
 .para_1 {
     text-align: center;
     color: #cbc2c2;
+    font-size: 18px;
 }
 
-.space {
-    height: 150px;
+.section_4 {
+    background: linear-gradient(-60deg, #d0d0d0, #fff9ea)
+}
+
+.gallery {
+    padding: 50px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.image {
+    background-repeat: no-repeat;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 5px;
+    background-position: center;
+}
+
+.image1 {
+    width: 400px;
+    height: 300px;
+    background-image: url(images/dylan-shaw-smUAKwMT8XA-unsplash\ \(1\).jpg);
+}
+
+
+.image2 {
+    width: 464px;
+    height: 300px;
+    background-image: url(images/nilantha-sanjeewa-wyUWxYTW0PQ-unsplash\ \(1\).jpg);
+}
+
+.image3 {
+    width: 241px;
+    height: 300px;
+    background-image: url(images/tobias-tullius-IiE50WMRa7I-unsplash\ \(1\).jpg);
+}
+
+.image4 {
+    width: 345px;
+    height: 300px;
+    background-image: url(images/farhath-firows-vo0mwCg5FJc-unsplash\ \(1\).jpg);
+}
+
+.image5 {
+    width: 200px;
+    height: 300px;
+    background-image: url(images/oliver-sjostrom-oixyQdGBkwQ-unsplash\ \(1\).jpg);
+}
+
+.image6 {
+    width: 450px;
+    height: 300px;
+    background-image: url(images/egle-sidaraviciute-TsyNiYziKiQ-unsplash\ \(1\).jpg);
+}
+
+.image7 {
+    width: 400px;
+    height: 300px;
+    background-image: url(images/jaromir-kavan-i9eaAR4dWi8-unsplash\ \(1\).jpg);
+}
+
+.image8 {
+    width: 401px;
+    height: 300px;
+    background-image: url(images/road-trip-with-raj-0uI8LANIe0A-unsplash\ \(1\).jpg);
 }
 
 .footer {
@@ -188,10 +244,9 @@ hr {
 }
 
 .footerhead {
-    padding-top: 30px;
-    margin: 30px;
+    padding: 30px;
     color: white;
-    width: 84px;
+    width: 150px;
 }
 
 .footerlinkhead {
