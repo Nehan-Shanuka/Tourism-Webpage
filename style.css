@@ -6,11 +6,25 @@
 }
 
 body {
-    background-color: #2d7780;
-    color: white;
+    color: black;
+}
+
+#backtotop {
+    background-color: white;
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    /*display: grid;
+    place-items: center;*/
+    border-radius: 50%;
 }
 
 header {
+    background-color: white;
+    color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -23,30 +37,104 @@ header {
 }
 
 .navigation a {
+    color: black;
     position: relative;
     font-size: 1.1em;
-    color: white;
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
 }
 
+.navigation a:hover {
+    color: red;
+}
+
+.section_1 {
+    background-color: #00adad;
+    height: 800px;
+    margin-top: 0px;
+}
+
 h1 {
+    color: white;
     font-size: 5em;
     text-align: center;
-    margin-top: 100px;
+    padding-top: 300px;
     text-shadow: 1px 2px 4px black;
+}
+
+.center_para {
+    font-size: 1.3em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.section_2 {
+
+}
+
+.destination {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.section_3 {
+    background-color: #00adad;
 }
 
 .squreline {
     width: 100%;
     padding: 100px 200px;
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.squre {
+.squreline a {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 8px 5px rgb(0, 0, 0, 0.05);
+    margin: 0 30px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.squreline a .squre {
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+}
+
+.squreline a::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: -260px;
+    left: 0;
+    background: linear-gradient(-45deg, #215391, #00adad);
+    position: absolute;
+    transition: 0.5s;
+}
+
+.squreline a:hover::after {
+    top: 0;
+}
+
+.squreline a:hover .squre {
+    color: white;
+}
+
+/*.squre {
     width: 250px;
     height: 250px;
     background-color: white;
@@ -57,15 +145,27 @@ h1 {
 }
 
 #squre1 {
-    background-color: blueviolet;
+    background-color: white;
+    border: 2px solid black;
 }
 
 #squre2 {
-    background-color: #e22bba;
+    background-color: white;
+    border: 2px solid black;
 }
 
 #squre3 {
-    background-color: #e25f2b;
+    background-color: white;
+    border: 2px solid black;
+}*/
+
+.squreline a.test:hover {
+    color: green;
+}
+
+.gallery {
+    padding-top: 20px;
+    margin-left: 20px;
 }
 
 hr {
@@ -85,4 +185,18 @@ hr {
 .footer {
     background-color: #110a2e;
     height: 300px;
+}
+
+.footerhead {
+    padding-top: 30px;
+    margin: 30px;
+    color: white;
+    width: 84px;
+}
+
+.footerlinkhead {
+    padding-top: 30px;
+    margin: 30px;
+    color: white;
+    width: 112px;
 }
