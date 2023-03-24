@@ -18,11 +18,13 @@ body {
     width: 64px;
     height: 64px;
     border-radius: 50%;
+    z-index: 99;
 }
 
 header {
     background-color: #ffffff;
     color: black;
+    text-decoration: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -32,6 +34,12 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
+}
+
+header .logo img {
+    box-shadow: 0 0 8px 5px rgb(0, 0, 0, 0.05);
+    border-radius: 50%;
+    border: #000000;
 }
 
 .navigation a {
@@ -63,7 +71,7 @@ header {
 }
 
 .section_1 {
-    background: linear-gradient(-30deg, #215391, #00adad);
+    background: linear-gradient(-60deg, #215391, #00adad);
     height: 800px;
     margin-top: 0px;
 }
@@ -82,16 +90,75 @@ h1 {
     color: #ffffff;
 }
 
-.section_2 {}
+.section_2 {
 
+}
+
+/* Default styles */
 .destination {
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.0em;
+  }
+  
+  .squreline {
+    padding: 50px 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .squreline a {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.05);
+    margin: 0 0 30px 30px;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.5s;
+  }
+  
+  .squreline a .squre {
+    font-size: 30px;
+    line-height: 80px;
+    position: relative;
+    z-index: 10;
+    transition: color 0.5s;
+  }
+  
+  /* Media query for smaller screens*/
+  @media screen and (max-width: px) {
+    .squreline {
+      padding: 50px 5%;
+    }
+  
+    .squreline a {
+      width: 200px;
+      height: 200px;
+      margin: 0 10px;
+      font-size: 20px;
+      line-height: 60px;
+    }
+  }
+  
+
+/*.destination {
     margin-top: 50px;
     text-align: center;
     text-decoration: underline;
 }
 
 .squreline {
-    width: 100%;
     padding: 50px 200px;
     display: flex;
     justify-content: space-between;
@@ -122,7 +189,7 @@ h1 {
     position: relative;
     z-index: 10;
     transition: color 0.5s;
-}
+}-*/
 
 .squreline a::after {
     content: '';
@@ -130,9 +197,25 @@ h1 {
     height: 100%;
     top: -260px;
     left: 0;
-    background: linear-gradient(-60deg, #215391, #00adad);
+    
     position: absolute;
     transition: 0.5s;
+}
+
+.squreline .squre1 a::after {
+    background: linear-gradient(-60deg, #bc3f11, #dac237);
+}
+
+.squreline .squre2 a::after {
+    background: linear-gradient(-60deg, #6f2191, #ad009c);
+}
+
+.squreline .squre3 a::after {
+    background: linear-gradient(-60deg, #185e13, #4aec29);
+}
+
+.squreline .squre4 a::after {
+    background: linear-gradient(-60deg, #7f2246, #ff88b6);
 }
 
 .squreline a:hover::after {
@@ -156,6 +239,7 @@ h1 {
     color: white;
     text-align: center;
     text-decoration: underline;
+    font-size: 2.0em;
 }
 
 hr {
@@ -177,6 +261,7 @@ hr {
     padding: 50px;
     text-align: center;
     text-decoration: underline;
+    font-size: 2.0em;
 }
 
 .image {
@@ -187,6 +272,12 @@ hr {
     box-sizing: border-box;
     margin: 10px 5px;
     background-position: center;
+    box-shadow: 0 0 8px 5px rgb(0, 0, 0, 0.05);
+    transition: transform 0.5s;
+}
+
+.image:hover {
+    transform: translateY(-10px);
 }
 
 .image1 {
@@ -246,12 +337,38 @@ hr {
 .footerhead {
     padding: 30px;
     color: white;
-    width: 150px;
+    width: 160px;
 }
 
 .footerlinkhead {
-    padding-top: 30px;
-    margin: 30px;
+    padding: 30px;
     color: white;
-    width: 112px;
+    width: 180px;
+}
+
+.footer .footer_section_1 .link {
+    margin-left: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer_section_1 .link a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer_section_2 .link_des {
+    margin-left: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer_section_2 .link {
+    color: white;
+    text-decoration: none;
+}
+
+/*.footer .footer_section_2 .link a {
+    color: white;
+    text-decoration: none;
 }
