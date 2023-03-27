@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*back to top button*/
+#backtotop {
+    background-color: white;
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+/*navigation bar of the web page*/
+header {
+    background-color: #ffffff;
+    color: black;
+    text-decoration: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+header .logo img {
+    box-shadow: 0 0 8px 5px rgb(0, 0, 0, 0.05);
+    border-radius: 50%;
+    border: #000000;
+}
+
+.navigation a {
+    color: black;
+    position: relative;
+    font-size: 1.1em;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.footer {
+    background-color: #110a2e;
+    height: 300px;
+}
+
+.section_1 {
+    height: 750px;
+}
+
+.section_1 .background-img {
+    background-image: url("images/colombo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.section_1 .background-img .maintext {
+    padding: 200px 0 0 100px;
+    z-index: 99;
+}
+
+h1 {
+    color: white;
+    font-size: 5em;
+    text-shadow: 1px 2px 4px black;
+}
+
+.center_para {
+    font-size: 1.3em;
+    color: #ffffff;
+}
+
+.heart_of_colombo .places-bunch {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center ;
+}
+
+.heart_of_colombo h2 {
+    border: 2px solid #000000;
+    border-radius: 20px;
+    width: 400px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.0em;
+}
+
+.heart_of_colombo .places-bunch h3 {
+    border: 1px solid #000000;
+    border-radius: 20px;
+    width: 300px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.heart_of_colombo .places {
+    width: 1460px;
+    height: 420px;
+    border-radius: 30px;
+    margin: 0 30px 30px 30px;
+}
+
+.heart_of_colombo .places-bunch .places .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heart_of_colombo .places-bunch .content .description-left {
+    width: 950px;
+    height: 300px;
+    background-color: #ffffd2;
+    box-shadow: 5px 5px 5px 2px rgb(0, 0, 0, 0.2);
+    padding: 10px;
+    font-size: 20px;
+    color: #000000;
+    border-radius: 0 20px 0 20px;
+    margin-left: 40px;
+}
+
+.heart_of_colombo .places-bunch .content .description-right {
+    width: 950px;
+    height: 300px;
+    background-color: #f1ffd8;
+    box-shadow: 5px 5px 5px 2px rgb(0, 0, 0, 0.2);
+    padding: 10px;
+    font-size: 20px;
+    color: #000000;
+    border-radius: 0 20px 0 20px;
+    margin-right: 40px;
+}
+
+.heart_of_colombo .places-bunch .content .image-right {
+    width: 400px;
+    height: 300px;
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 5px 5px 5px 2px rgb(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 40px;
+}
+
+.heart_of_colombo .places-bunch .content .image-left {
+    width: 400px;
+    height: 300px;
+    border-radius: 0 20px 20px 20px;
+    box-shadow: 5px 5px 5px 2px rgb(0, 0, 0, 0.2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 40px;
+}
+
+.heart_of_colombo .places-bunch .content #galleface {
+    background-image: url("images/gallefaceone.jpg");
+}
+
+.heart_of_colombo .places-bunch .content #gangarama {
+    background-image: url("images/gangaramatemple.jpg");
+}
+
+.heart_of_colombo .places-bunch .content #lotus-tower {
+    background-image: url("images/lotus-tower.jpg");
+}
+
+.heart_of_colombo .places-bunch .content #port-city {
+    background-image: url("images/portcity");
+}
+
+.heart_of_colombo .places-bunch .content #lavaniya-beach {
+    background-image: url("images/lavaniyabeach.webp");
+}
+
+.heart_of_colombo .places-bunch .content #devi-park {
+    background-image: url("images/devipark.jpg");
+}
+
+.heart_of_colombo .places-bunch .content #museum {
+    background-image: url("images/museum.jpg");
+}
+
+.heart_of_colombo .places-bunch .content #inde-square {
+    background-image: url("images/inde-square.jpg");
+}
+
+.heart_of_colombo .places-bunch .content #seethawaka {
+    background-image: url("images/seethawaka.jpg");
+}
+
+.heart_of_colombo .places-bunch .content #negombo {
+    background-image: url("images/negombo.jpg");
+}
+
+.heart_of_colombo .places-bunch .content #wadduwa {
+    background-image: url("images/wadduwa.jpg");
+}
+
+.colombo_suburbs h2{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2.0em;
+    padding: 100px;
+}
+
+/*Bottom of the web page*/
+.footerhead {
+    padding: 30px;
+    color: white;
+    width: 160px;
+}
+
+.footerlinkhead {
+    padding: 30px;
+    color: white;
+    width: 180px;
+}
+
+.footer .footer_section_1 .link {
+    margin-left: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer_section_1 .link a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer_section_2 .link_des {
+    margin-left: 100px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer .footer_section_2 .link {
+    color: white;
+    text-decoration: none;
+}

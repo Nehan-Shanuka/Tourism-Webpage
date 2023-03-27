@@ -82,7 +82,7 @@ form {
   /* Styles for fieldset */
   fieldset {
     word-wrap: break-word;
-    background-color: #c6c4c2;
+    background-color: #ffffff;
     border: none;
     height: 100px;
     text-align: center;
@@ -110,11 +110,12 @@ form {
   
   /* Styles for input in normal section */
   .section_1 .normal input  {
+    background-color: #cccccc;
     width: 100%;
     max-width: 550px;
     margin-top: 5px;
     padding: 10px;
-    border: white;
+    border: rgb(255, 255, 255);
     border-radius: 5px;
     margin-bottom: 20px;
   }
