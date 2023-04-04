@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    background: linear-gradient(60deg, #4d3664, #bab5f6);
+    padding: 20px 0;
+    height: 100vh;
+}
+
+.section {
+    width: 1000px;
+    height: 100%;
+    border: 2px solid #000000;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+    text-align: center;
+    color: #fff;
+    background-color: #355C7D;
+    margin: 0;
+}
+.name {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 20px;
+}
+.role {
+    text-align: center;
+    padding: 0 0 10px 0;
+    font-size: 18px;
+}
+
+.all {
+    padding: 15px 0;
+    text-align: center;
+}
+.all h3{
+    font-size: 20px;
+}
+.all p {
+    font-size: 16px;
+}
+.all .link {
+    display: flex;
+    justify-content: center
+}

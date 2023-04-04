@@ -1,154 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    color: black;
-}
-
-#backtotop {
-    background-color: white;
-    color: black;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    z-index: 99;
-}
-
-header {
-    background-color: #ffffff;
-    color: black;
-    text-decoration: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-}
-
-header .logo img {
-    box-shadow: 0 0 8px 5px rgb(0, 0, 0, 0.05);
-    border-radius: 50%;
-    border: #000000;
-}
-
-.navigation a {
-    color: black;
-    position: relative;
-    font-size: 1.1em;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
-}
-
-.navigation a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .5s;
-}
-
-.navigation a:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-}
-
-.nav-2 {
-    background-color: #cbc2c2;
-    opacity: 0.3;
-    position: sticky;
-    top: 0;
-}
-
-/* inter section navigation bottons */
-.nav-2 .inter-section-navbar {
-    padding: 10px 200px;
-    
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-.inter-section-navbar .button {
-    opacity: 1.0;
-    width: 100px;
-    text-align: center;
-    padding: 5px;
-    border: 2px solid #000000;
-    border-radius: 15px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    transition: transform 0.5s;
-    box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.05);
-    z-index: 99;
-}
-
-.inter-section-navbar .button a {
-    text-decoration: none;
-    color: #000000;
-    z-index: 99;
-}
-
-.inter-section-navbar .button a .nav_txt {
-    font-size: 30px;
-    line-height: 80px;
-    position: relative;
-    z-index: 10;
-    transition: color 0.5s;
-  }
-
-.inter-section-navbar .button::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: -30px;
-    left: 0;
-    background: linear-gradient(-60deg, #215391, #00adad);
-    position: absolute;
-    transition: 0.3s;
-    z-index: -1;
-}
-
-.inter-section-navbar .button:hover::after {
-    top: 0;
-}
-
-.inter-section-navbar .button a:hover {
-    color: #ffffff;
-}
-
-.inter-section-navbar .button a:hover {
-}
-
-
-
+@import "commonstyle.css";
 
 .section_1 {
-    height: 850px;
-    
-    /*background: linear-gradient(-60deg, #215391, #00adad);*/
+    height: 750px;
 }
 
 .section_1 .background-image {
@@ -172,10 +25,6 @@ h1 {
 .center_para {
     font-size: 1.3em;
     color: #ffffff;
-}
-
-.section_2 {
-
 }
 
 /* Default styles */
@@ -246,22 +95,6 @@ h1 {
     background: linear-gradient(-60deg, #215391, #00adad);
 }
 
-/*.squreline .squre1 a::after {
-    background: linear-gradient(-60deg, #bc3f11, #dac237);
-}
-
-.squreline .squre2 a::after {
-    background: linear-gradient(-60deg, #6f2191, #ad009c);
-}
-
-.squreline .squre3 a::after {
-    background: linear-gradient(-60deg, #185e13, #4aec29);
-}
-
-.squreline .squre4 a::after {
-    background: linear-gradient(-60deg, #7f2246, #ff88b6);
-}*/
-
 .squreline a:hover::after {
     top: 0;
 }
@@ -276,6 +109,7 @@ h1 {
 
 .section_3 {
     background: linear-gradient(-60deg, #215391, #00adad);
+    padding-bottom: 30px;
 }
 
 .sometext {
@@ -294,7 +128,12 @@ hr {
 .para_1 {
     text-align: center;
     color: #cbc2c2;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.highlight {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .section_4 {
@@ -371,48 +210,4 @@ hr {
     width: 401px;
     height: 300px;
     background-image: url(images/road-trip-with-raj-0uI8LANIe0A-unsplash\ \(1\).jpg);
-}
-
-.footer {
-    background-color: #110a2e;
-    height: 300px;
-}
-
-.footerhead {
-    padding: 30px;
-    color: white;
-    width: 160px;
-}
-
-.footerlinkhead {
-    padding: 30px;
-    color: white;
-    width: 180px;
-}
-
-.footer .footer_section_1 .link {
-    margin-left: 100px;
-    color: white;
-    text-decoration: none;
-}
-
-.footer .footer_section_1 .link a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer .footer_section_2 .link_des {
-    margin-left: 100px;
-    color: white;
-    text-decoration: none;
-}
-
-.footer .footer_section_2 .link {
-    color: white;
-    text-decoration: none;
-}
-
-/*.footer .footer_section_2 .link a {
-    color: white;
-    text-decoration: none;
 }

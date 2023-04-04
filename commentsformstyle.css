@@ -1,246 +1,368 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+@import "commonstyle.css";
+
+html {
+  scroll-padding-top: 100px;
 }
 
-body {}
-
-#backtotop {
-    background-color: white;
-    color: black;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    z-index: 99;
-}
-
-header {
-    background-color: #ffffff;
-    color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-}
-
-.navigation a {
-    color: black;
-    position: relative;
-    font-size: 1.1em;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
-}
-
-.navigation a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .5s;
-}
-
-.navigation a:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-}
-
-.section_1 {
-    background: linear-gradient(-60deg, #215391, #00adad);
+.main-section {
+  background: linear-gradient(-60deg, #215391, #00adad);
 }
 
 h1 {
-    color: white;
-    font-size: 2.5em;
-    text-align: center;
-    padding-top: 120px;
-    padding-bottom: 40px;
-    text-shadow: 1px 2px 4px black;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 40px;
+  text-shadow: 1px 2px 4px black;
 }
 
 /* Default styles for form */
 form {
-    position: relative;
-  }
-  
-  /* Styles for fieldset */
-  fieldset {
-    word-wrap: break-word;
-    background-color: #ffffff;
-    border: none;
-    height: 100px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    border-radius: 30px;
-    max-width: 750px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-  
-  /* Styles for label */
-  label {
-    display: block;
-    text-align: left;
-    padding-left: 30px;
-    padding-top: 10px;
-    font-size: 18px;
-  }
-  
-  /* Styles for section_1 */
-  .section_1 {
-    padding-bottom: 150px;
-  }
-  
-  /* Styles for input in normal section */
-  .section_1 .normal input  {
-    background-color: #cccccc;
-    width: 100%;
-    max-width: 550px;
-    margin-top: 5px;
-    padding: 10px;
-    border: rgb(255, 255, 255);
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  /* Styles for input in radio section */
-  .section_1 .radio input {
-    height:20px;
-    width:20px;
-    margin-left: 25px;
-    margin-bottom: 20px;
-  }
-  
-  /* Media Query for screens with a maximum width of 768px */
-  @media screen and (max-width: 768px) {
-  
-    /* Styles for fieldset */
-    fieldset {
-      max-width: 100%;
-      margin: 0;
-      padding: 0 10px;
-      height: auto;
-    }
-    
-    /* Styles for label */
-    label {
-      font-size: 16px;
-    }
-  
-    /* Styles for input in normal section */
-    .section_1 .normal input  {
-      width: 100%;
-      max-width: 100%;
-    }
-  
-    /* Styles for input in radio section */
-    .section_1 .radio input {
-      margin-left: 10px;
-    }
-  }
-  
-
-/*form {
-    position: relative;
-    
+  position: relative;
+  width: 1000px;
+  margin: auto;
 }
 
+/* Styles for fieldset */
 fieldset {
-    word-wrap: break-word;
-    background-color: #c6c4c2;
-    border: none;
-    height: 100px;
-    text-align: center;
-    text-decoration: none;
-    color: black;
-    border-radius: 10px;
-    max-width: 750px;
-    position: relative;
-    left: 25%;
-    right: inherit;
-    overflow: hidden;
+  word-wrap: break-word;
+  background-color: #e9e9e9;
+  max-width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  margin: 10px auto;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
-label {
-    display: block;
-    text-align: left;
-    padding-left: 30px;
-    padding-top: 10px;
-    font-size: 18px;
+.personal-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1000px;
+  height: 53px;
 }
 
-.section_1 {
-    padding-bottom: 150px;
+.getemail {
+  height: auto;
+  padding: 10px;
+  display: flex;
+  justify-content: left;
 }
 
-.section_1 .normal input  {
-    width: 550px;
-    margin-top: 5px;
-    padding: 10px;
-    border: white;
-    border-radius: 5px;
+.getemail label {
+  display: inline-block;
+  width: 70px;
+  padding: 3px 0 0 20px;
+  text-align: left;
 }
 
-.section_1 .radio input {
-    height:20px;
-    width:20px;
-    margin-left: 25px;
+.getemail input {
+  height: 25px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 2px;
+  width: 20em;
+}
+
+.age {
+  height: auto;
+  padding: 10px;
+}
+
+.age label {
+  padding-right: 10px;
+}
+
+.country {
+  height: auto;
+  padding: 10px 30px 0 0;
+}
+
+.country label {
+  padding-right: 10px;
+}
+
+#age,
+#country {
+  width: 150px;
+  height: 25px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.topic {
+  background-color: rgba(5, 5, 80, 0.607);
+  color: #ffffff;
+  margin: 20px 0 10px 0;
+}
+
+.topic p {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/* Styles for check-boxes */
+.checkbox-set {
+  padding: 10px 40px;
+}
+
+.checkbox-set .checkbox {
+  padding: 0 0 10px 5px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.checkbox-set .checkbox input {
+  width: 15px;
+  height: 15px;
+}
+
+.checkbox-set .checkbox label {
+  font-size: 17.5px;
+}
+
+/* Styles for radio inputs */
+.radiobtn-set {
+  padding: 15px 0;
+}
+
+.radiobtn-set .radiobtn {
+  display: inline;
+  padding: 0 40px;
+}
+
+.radiobtn-set .radiobtn input {
+  width: 15px;
+  height: 15px;
+}
+
+.radiobtn-set .radiobtn label {
+  font-size: 17.5px;
+}
+
+.radiobtn-set .radio-option {
+  display: inline;
+  padding: 0 25px;
+}
+
+.radiobtn-set .radio-option input {
+  width: 15px;
+  height: 15px;
+}
+
+.radiobtn-set .radio-option label {
+  font-size: 17.5px;
+}
+
+.dropdown {
+  padding: 20px 0;
+  display: flex;
+  justify-content: left;
+}
+
+.dropdown p {
+  display: inline-block;
+  width: 400px;
+  text-align: left;
+  padding: 5px 0 0 20px;
+  font-size: 18px
+}
+
+#hear,
+#device {
+  width: 200px;
+  display: inline;
+  padding: 5px 0;
+}
+
+/* Styles for label */
+.normal label,
+fieldset p {
+  display: block;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+/* Styles for section_1 */
+.main-section {
+  padding-bottom: 150px;
+}
+
+/* Styles for input in normal section */
+.main-section .normal input {
+  width: 100%;
+  max-width: 850px;
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.main-section .normal textarea {
+  margin: 10px 0 20px 0;
+}
+
+.main-section .radio {
+  height: 150px;
+}
+
+.main-section .radio .radio-align {
+  display: flex;
+  padding: 10px;
+  display: inline-block;
+}
+
+.main-section .radio .radio-align label {
+  display: block;
+  padding: 0 0 0 0;
+}
+
+/* Styles for input in radio section */
+.main-section .radio .radio-align input {
+  height: 20px;
+  width: 20px;
+}
+
+/* Media Query for screens with a maximum width of 768px */
+/*@media screen and (max-width: 768px) {
+
+  /* Styles for fieldset */
+/*fieldset {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 10px;
+    height: auto;
+  }
+
+  /* Styles for label */
+
+
+/* Styles for input in normal section */
+/*.section_1 .normal input {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Styles for input in radio section */
+/*.section_1 .radio input {
+    margin-left: 10px;
+  }
 }*/
 
-.footer {
-    background-color: #110a2e;
-    height: 300px;
+label {
+  font-size: 16px;
 }
 
-.footerhead {
-    padding: 30px;
-    color: white;
-    width: 160px;
+.main-section .submit fieldset {
+  height: auto;
+  padding: 10px;
 }
 
-.footerlinkhead {
-    padding: 30px;
-    color: white;
-    width: 180px;
+.main-section .submit input,
+button {
+  text-align: center;
+  width: 70px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.footer .footer_section_1 .link {
-    margin-left: 100px;
-    color: white;
-    text-decoration: none;
+/* --------------------------------------------------------------- */
+
+#popup {
+  width: 400px;
+  background: #ffffff;
+  border-radius: 6px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333333;
+  visibility: hidden;
+  transition: transform 2s, top 2s;
 }
 
-.footer .footer_section_1 .link a {
-    color: white;
-    text-decoration: none;
+#container {
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.footer .footer_section_2 .link_des {
-    margin-left: 100px;
-    color: white;
-    text-decoration: none;
+#open-container {
+  position: fixed;
+  visibility: visible;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
-.footer .footer_section_2 .link {
-    color: white;
-    text-decoration: none;
+#open-popup {
+  background: #ffffff;
+  border-radius: 6px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333333;
+  visibility: visible;
+  transition: transform 2s, top 2s;
 }
 
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
 
+.popup h2 {
+  font-size: 45px;
+  font-weight: 500;
+  margin: 30px 0 30px;
+}
+
+.popup p {
+  font-size: 18px;
+  text-align: center;
+  padding: 0;
+}
+
+.popup button {
+  width: 90%;
+  height: 50px;
+  margin-top: 50px;
+  padding: 10px 0;
+  background-color: #6fd649;
+  color: #ffffff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.input-control input:focus {
+  outline: 0;
+}
+
+.realerror {
+  color: #ff3860;
+  font-size: 15px;
+  height: 20px;
+}

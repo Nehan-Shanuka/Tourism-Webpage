@@ -1,76 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-/*back to top button*/
-#backtotop {
-    background-color: white;
-    color: black;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 64px;
-    height: 64px;
-    border-radius: 50%;
-    z-index: 99;
-}
-
-/*navigation bar of the web page*/
-header {
-    background-color: #ffffff;
-    color: black;
-    text-decoration: none;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 99;
-}
-
-header .logo img {
-    box-shadow: 0 0 8px 5px rgb(0, 0, 0, 0.05);
-    border-radius: 50%;
-    border: #000000;
-}
-
-.navigation a {
-    color: black;
-    position: relative;
-    font-size: 1.1em;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 40px;
-}
-
-.navigation a::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    width: 100%;
-    height: 3px;
-    background-color: black;
-    border-radius: 5px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .5s;
-}
-
-.navigation a:hover::after {
-    transform-origin: left;
-    transform: scaleX(1);
-}
-
-.footer {
-    background-color: #110a2e;
-    height: 300px;
-}
+@import "commonstyle.css";
 
 .section_1 {
     height: 750px;
@@ -146,11 +74,11 @@ h1 {
 .heart_of_colombo .places-bunch .content .description-left {
     width: 950px;
     height: 300px;
-    background-color: #ffffd2;
+    background: linear-gradient(-60deg, #215391, #00adad);
     box-shadow: 5px 5px 5px 2px rgb(0, 0, 0, 0.2);
     padding: 10px;
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
     border-radius: 0 20px 0 20px;
     margin-left: 40px;
 }
@@ -158,11 +86,11 @@ h1 {
 .heart_of_colombo .places-bunch .content .description-right {
     width: 950px;
     height: 300px;
-    background-color: #f1ffd8;
+    background: linear-gradient(-60deg, #215391, #00adad);
     box-shadow: 5px 5px 5px 2px rgb(0, 0, 0, 0.2);
     padding: 10px;
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
     border-radius: 0 20px 0 20px;
     margin-right: 40px;
 }
@@ -236,39 +164,4 @@ h1 {
     text-decoration: underline;
     font-size: 2.0em;
     padding: 100px;
-}
-
-/*Bottom of the web page*/
-.footerhead {
-    padding: 30px;
-    color: white;
-    width: 160px;
-}
-
-.footerlinkhead {
-    padding: 30px;
-    color: white;
-    width: 180px;
-}
-
-.footer .footer_section_1 .link {
-    margin-left: 100px;
-    color: white;
-    text-decoration: none;
-}
-
-.footer .footer_section_1 .link a {
-    color: white;
-    text-decoration: none;
-}
-
-.footer .footer_section_2 .link_des {
-    margin-left: 100px;
-    color: white;
-    text-decoration: none;
-}
-
-.footer .footer_section_2 .link {
-    color: white;
-    text-decoration: none;
 }

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------------------------------------------------------------- */
+/*back to top button*/
+#backtotop {
+  background-color: white;
+  color: black;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------------------------------------------------------------------- */
+/*navigation bar of the web page*/
+header {
+  background-color: #ffffff;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.navigation a {
+  color: black;
+  position: relative;
+  font-size: 1.1em;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+.navigation a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  border-radius: 5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.navigation .primary-nav-bar{
+  display: inline;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.navigation .secondary-nav-bar {
+  display: inline;
+  padding: 20px 0 0 0;
+}
+
+/* ---------------------------------------------------------------------- */
+/*Bottom of the web page*/
+
+.footer {
+  background-color: #110a2e;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px 0 0 10px;
+}
+
+.footerhead {
+  padding: 30px;
+  color: white;
+  width: 160px;
+}
+
+.footerlinkhead {
+  padding: 30px;
+  color: white;
+  width: 180px;
+}
+
+.footer .footer_section_1 .link {
+  margin-left: 100px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer .footer_section_1 .link a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .footer_section_2 .link_des {
+  margin-left: 100px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer .footer_section_2 .link {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .pageEditor {
+  padding: 30px 250px 0 0;
+}
+
+.footer .pageEditor .pageEditor-btn {
+  width: 200px;
+  padding: 10px 20px;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+.footer .pageEditor .pageEditor-btn a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
